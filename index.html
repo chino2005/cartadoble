@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Para Mi Niñita</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f6;
+      display: flex;
+      justify-content: center;
+      align-items: center;    
+      min-height: 100vh;
+      text-align: center;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      max-width: 600px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #cc66a1;
+    }
+
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      background-color: #cc66a1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    button:hover {
+      background-color: #b34d8c;
+    }
+
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      margin-bottom: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .error {
+      color: red;
+      margin-top: 5px;
+    }
+
+    .message-page {
+      background-color: #ffe0f0;
+      border: 2px dashed #cc66a1;
+      padding: 30px;
+      border-radius: 15px;
+      margin-top: 20px;
+    }
+  
+    .mensaje-fijo {
+      font-size: 18px;
+      color: #cc66a1;
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 🎵 Música de fondo en bucle -->
+  <audio autoplay loop hidden>
+    <source src="musicaweb.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio HTML5.
+  </audio>
+
+  <div class="container" id="inicio">
+    <h1>PARA MI NIÑITA</h1>
+    <button onclick="mostrarPreguntas()">PRESIONE AQUÍ</button>
+  </div>
+
+  <div class="container hidden" id="preguntas">
+    <p>
+      Hola niñita, la verdad no sé qué es lo que esté pasando ahora,<br>
+      sea cual sea el caso intenté estar preparado para cualquier situación.<br>
+      En fin, sí te daré dos contraseñas. Si las cosas fueron bien entre nosotros después de la charla, responde aquí:<br>
+    </p>
+
+    <!-- Pregunta 1 -->
+    <p><strong>1. ¿HAY ALGO QUE SIEMPRE TENGO EN MENTE?</strong></p>
+    <input type="text" id="respuesta1" placeholder="Tu respuesta aquí...">
+    <button onclick="verificarRespuesta1()">Enviar</button>
+    <p id="error1" class="error hidden">Respuesta incorrecta</p>
+
+    <!-- Área mensaje 1 -->
+    <div class="message-page hidden" id="mensaje1">
+      <h2>💌 QUIERO ESTAR A TU LADO HASTA EL FINAL  💌</h2>
+      <div class="mensaje-fijo"> Desde la primera vez que te vi lograste que mis ojos brillaran, en ese momento supe que eres especial, con el tiempo perdi la timidez y te hable, cuando empezamos a hablar nos conocimos mejor y ahi me di cuenta que lo que sentia en mi corazon era amor, fuiste la primera chica con la que senti algo tan especial para mi y quiero que siga siendo asi, quiero cumplir todo aquello que dijimos una vez quiero ser feliz a tu lado, no necesito a nadie mas, solo te necesito a ti, se que no soy perfecto pero por ti haria muchisimas cosas con tal de estar bien contigo.
+          Te amo demasiado, y siento que nunca podré decirlo lo suficiente. Eres una mujer maravillosa, y cada día descubro algo nuevo en ti que me enamora más. No hay rincón de mi corazón que no te pertenezca; amo cada parte de ti, cada gesto, cada detalle que me sorprende, que me reta y que me inspira a crecer. No eres solo alguien a quien amo, eres mi razón, mi fuerza y la inspiración que me impulsa a ser mejor cada día.
+
+Siento que llevas una parte de mí en ti, que estamos conectados de una forma que no sé explicar. No importa el tiempo, la distancia o las circunstancias, siempre te envío mi amor en silencio, con la esperanza de que lo sientas y te haga sonreír.
+
+Quiero hablar contigo, escucharte, sentir que estamos cerca incluso cuando no lo estamos físicamente. Necesito esa conexión contigo, compartir pensamientos, risas y silencios. Quiero sentir que me amas tanto como yo a ti, porque lo nuestro es lo más valioso que tengo. Y sé que a veces puedo ser intenso, pero es porque no quiero quedarme solo en palabras: quiero demostrarte mi amor con hechos, porque amar es más que decirlo, es demostrarlo todos los días en los pequeños detalles y en los grandes gestos.
+
+Déjame ser el único que te bese, el que te dé los buenos días, las buenas tardes y las buenas noches. Quiero acompañarte en tus momentos felices y sostenerte en los difíciles. Quiero que me veas como tu pareja, tu mejor amigo, tu confidente, tu amante y el amor de tu vida. No soy perfecto, pero quiero ser el hombre que te cuide, te valore y te ame como mereces, con todo lo que soy y con todo lo que tengo.
+
+No quiero que lo nuestro sea una historia más; quiero que sea la historia, la que construimos con paciencia, entrega y amor todos los días. Si me preguntas si quiero todo contigo, mi respuesta siempre será un sí rotundo, sin dudas y sin miedo. Contigo no quiero mitades ni momentos fugaces; contigo quiero todo, quiero siempre.
+
+Sueño con despertar a tu lado cada mañana y que seas mi último pensamiento cada noche. Quiero abrazarte hasta olvidar el mundo, besarte hasta detener el tiempo, reír contigo hasta que nos duela el estómago y tener conversaciones eternas en la madrugada. Quiero verte brillar, celebrar tus victorias y sostenerte cuando sientas que no puedes más.
+
+Nuestro amor quiero que sea un refugio, un hogar donde podamos ser nosotros mismos, sin miedos ni máscaras. Quiero nuestras primeras veces y también nuestras eternidades. Quiero recorrer el mundo contigo, pero más que eso, quiero recorrer cada rincón de tu alma y que recorras el mío, para que siempre nos sintamos en casa el uno en el otro.
+
+Mi amor, esto no es un deseo pasajero: es una promesa. Porque cuando pienso en mi futuro, en mis sueños y en mis planes, siempre estás tú. Siempre tú.
+          TE AMO MI NIÑITA❤️</div>
+    </div>
+
+    <hr style="margin: 30px 0;">
+
+    <!-- Pregunta 2 -->
+    <p><em>Si está por responder es que algo no muy bueno pasó</em></p>
+    <p><strong>2. ¿HAY ALGO QUE SIEMPRE DIRÉ?</strong></p>
+    <input type="text" id="respuesta2" placeholder="Tu respuesta aquí...">
+    <button onclick="verificarRespuesta2()">Enviar</button>
+    <p id="error2" class="error hidden">Respuesta incorrecta</p>
+
+    <!-- Área mensaje 2 -->
+    <div class="message-page hidden" id="mensaje2">
+      <h2>💖 ESTOY MUY APENADO POR LO QUE PASO💖</h2>
+      <div class="mensaje-fijo">Estos dias que intente volver a hablarte te note muy rara, senti que no querias hablar mas conmigo por que me respondias de igual forma en la que me respondias cuando intente hablarte cuando te escribi despues de tiempo, siento que ya no quieres nada conmigo y tranquila yo lo entiendo muy bien, tal vez conociste a alguien mejor que yo, antes de terminar la relacion te estabas citando con tu excompañero de clase para salir y tomar algo y no se que mas, me dolio demasiado que le hayas aceptado esa salida, que le hayas dicho que ibas a agendar para que se pudieran ver, estabas aun en una relacion conmigo y le hablaste como si no existiera eso fue lo que me dolio mucho, despues de eso me dejaste de seguir me bloqueaste de tu cuenta para que no pudiera ver tus conversaciones, en ese momento dije que ya no tenias confianza conmigo me dejaste en visto no me hablaste mas, pense que ya no querias nada conmigo por eso me sacaste de tu cuenta, me dejaste de hablar, te citaste con tu compañero y me dejaste en visto,senti que ya te cansaste de mi, pero aun asi sabes que te robaste mi corazon mi corazon te pertenece, a pesar de todo por ejemplo voy a cualquier parte y sin darme cuenta, sigo buscándote. Te busco en las calles, en las miradas de otras personas, en los lugares donde sé que no estarás… y aun así, dentro de mí algo esperaba encontrarte. Durante todo este tiempo lo único que quise fue volver a mirarte como antes, perderme en tus ojos y reconocerme en ellos. Quise creer que el tiempo no mataba todo, que siempre habría al menos un día en el que podríamos volver a encontrarnos.
+
+Intenté con todas mis fuerzas luchar por lo nuestro, cumplir aquella promesa que un día te hice: no soltarte, estar contigo en las buenas y en las malas, creer en un futuro donde pudiéramos decirnos: “Mira lo lejos que hemos llegado, mi amor”. Puse mi corazón entero en esa ilusión, pero el amor, por sí solo, a veces no basta para sostener lo que soñamos.
+
+Me duele despedirme porque jamás podré amar a alguien de la forma en que te amé a ti. Te entregué lo más profundo de mí, con la certeza de que eras la última persona a la que quería amar así. Y aunque me aferre a los recuerdos, aunque me resista a soltar, sé que seguir luchando contra lo inevitable solo nos hará más daño.
+
+Me quedo con lo que fuiste en mi vida, con tus risas, tus abrazos, tu voz, con cada gesto y cada instante compartido. Me quedo con la certeza de que contigo conocí lo que es amar de verdad. No puedo imaginar un mundo sin ti.
+
+Te amaré en silencio, desde la distancia, hasta que mis recuerdos se desvanezcan, se que no sera facil pero poco a poco lo entendere te dejare en paz para que seas feliz, me cuesta entender que no estaras a mi lado, no estaras en esos momentos que tanto soñe a tu lado pero siempre ten en mente que jamas olvidare que eres la mujer que amo y la unica mujer con la que quiero todo jamas olvidare eso.
+Al final te amo demasiado para dejarte ser feliz aunque no sea a mi lado solo te vere de lejos y me pondre feliz cuando te vea faliz siempre velare por tu felicidad desde lejitos vere cumplir tus sueños.
+Solo quiero que nunca olvides que Te amo demasiado y siempre sera asi no necesito a nadie mas solo te quiero a ti y mi corazon te pertenece
+TE AMO MI NIÑITA nunca olvide que puedes contar conmigo.</div>
+    </div>
+  </div>
+
+  <script>
+    function mostrarPreguntas() {
+      document.getElementById("inicio").classList.add("hidden");
+      document.getElementById("preguntas").classList.remove("hidden");
+    }
+
+    function verificarRespuesta1() {
+      const r1 = document.getElementById("respuesta1").value.trim().toUpperCase();
+      const correcta = "ESTOY MUY ENAMORADO DE MI NIÑITA";
+      const error = document.getElementById("error1");
+      const mensaje = document.getElementById("mensaje1");
+
+      if (r1 === correcta) {
+        error.classList.add("hidden");
+        mensaje.classList.remove("hidden");
+      } else {
+        error.classList.remove("hidden");
+      }
+    }
+
+    function verificarRespuesta2() {
+      const r2 = document.getElementById("respuesta2").value.trim().toUpperCase();
+      const correcta = "TE ROBASTE MI CORAZON";
+      const error = document.getElementById("error2");
+      const mensaje = document.getElementById("mensaje2");
+
+      if (r2 === correcta) {
+        error.classList.add("hidden");
+        mensaje.classList.remove("hidden");
+      } else {
+        error.classList.remove("hidden");
+      }
+    }
+  </script>
+
+</body>
+</html>
